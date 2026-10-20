@@ -67,3 +67,10 @@ userForm.addEventListener("submit", function (event) {
     displayUser(name, age);
 });
 
+// Load saved information when the page opens
+const savedName = localStorage.getItem("userName");
+const savedAge = localStorage.getItem("userAge");
+
+if (savedName !== null && savedAge !== null) {
+    displayUser(savedName, Number(savedAge));
+}
