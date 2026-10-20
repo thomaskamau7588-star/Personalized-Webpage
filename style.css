@@ -29,3 +29,21 @@ label {
     font-weight: bold;
     color: #315b40;
 }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #b7cdbb;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: none;
+    border-color: #369764;
+    box-shadow: 0 0 5px rgba(54, 151, 100, 0.3);
+}
+
