@@ -28,4 +28,20 @@ function displayUser(name, age) {
     } else {
         ageMessage.textContent = "You are under 18. Some content may not be suitable for your age.";
     }
+
+
+ // Calculate age in months
+    ageMonths.textContent = `You are approximately ${age * 12} months old.`;
+
+    // Clear previous quotes
+    quotesContainer.innerHTML = "";
+
+    // Display five motivational quotes using a loop
+    for (let i = 0; i < 5; i++) {
+        const quote = document.createElement("p");
+
+        quote.textContent = quotes[i];
+
+        quotesContainer.appendChild(quote);
+    }
 }
