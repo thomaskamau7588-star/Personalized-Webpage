@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7f0;
+    color: #263b2b;
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #246b45;
+    margin-bottom: 30px;
+}
