@@ -16,3 +16,16 @@ const quotes = [
     "Never give up on your dreams.",
     "Your future starts with what you do today."
 ];
+
+// Display the personalized information
+function displayUser(name, age) {
+    // Display a personalized greeting
+    greeting.textContent = `Hello, ${name}! Welcome to your webpage.`;
+
+    // Check the user's age
+    if (age >= 18) {
+        ageMessage.textContent = "You are 18 or older. You can access adult content where legally permitted.";
+    } else {
+        ageMessage.textContent = "You are under 18. Some content may not be suitable for your age.";
+    }
+}
