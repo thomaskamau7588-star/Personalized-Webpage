@@ -45,3 +45,25 @@ function displayUser(name, age) {
         quotesContainer.appendChild(quote);
     }
 }
+
+// Handle form submission
+userForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+    const age = Number(ageInput.value);
+
+    // Check that the name is not empty and age is valid
+    if (name === "" || ageInput.value === "" || age < 0 || age > 120 || !Number.isInteger(age)) {
+        alert("Please enter a valid name and age between 0 and 120.");
+        return;
+    }
+
+    // Save the user's information in localStorage
+    localStorage.setItem("userName", name);
+    localStorage.setItem("userAge", age);
+
+    // Display the user's information
+    displayUser(name, age);
+});
+
