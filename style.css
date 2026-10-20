@@ -47,3 +47,19 @@ input:focus {
     box-shadow: 0 0 5px rgba(54, 151, 100, 0.3);
 }
 
+button {
+    width: 100%;
+    background-color: #287a4b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #195c36;
+}
